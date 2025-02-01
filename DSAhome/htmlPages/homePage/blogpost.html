@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="animations.js"></script>
+  <title>Blog Post</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      background-color: rgb(226, 205, 233);
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: rgb(10, 10, 10);
+      background-image: url('home_up.png');
+      background-position: center;
+      background-size: cover;
+      height: 230px;
+      width: 100%;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .second-navbar {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background-color: transparent;
+      border-radius: 8px;
+      animation: slideDown 0.7s ease-in-out;
+    }
+
+    .second-navbar ul {
+      list-style-type: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    .second-navbar ul li {
+      display: inline;
+    }
+
+    .second-navbar ul li a {
+      display: inline-block;
+      padding: 8px 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 4px;
+      background-color: #60a5fa;
+      transition: background-color 0.3s ease;
+    }
+
+    .second-navbar ul li a:hover {
+      background-color: rgba(104, 114, 209, 0.7);
+      animation: pulse 0.6s infinite;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .blog-content {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .blog-footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 10px;
+      background-color: #1e293b;
+      color: white;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .second-navbar ul li a:hover {
+      background-color: #3b82f6;
+      animation: pulse 0.6s infinite;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="scrollProgress"></div>
+    <nav class="second-navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="About_page.html">About Us</a></li>
+        <li><a href="loginRegister/login.html">Login</a></li>
+        <li><a href="loginRegister/register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="blog-content">
+      <h2>Blog Post Title</h2>
+      <p>Welcome to this blog post! In this article, we will dive deep into...</p>
+      <p>More detailed content will follow, discussing important concepts related to the topic...</p>
+      <p>Stay tuned for more information and insights!</p>
+    </div>
+  </section>
+
+  <footer class="blog-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="home_logo.png" alt="Website Logo">
+      </div>
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="About_page.html">About Us</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/mitko.vachev.1" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Discord</a>
+        <a href="https://instagram.com/mitaka_22" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Data Structure AND Algorithms. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>

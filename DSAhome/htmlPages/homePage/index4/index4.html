@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter: IV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+        }
+
+        header {
+            background-color: #1a3e5c;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+            font-weight: 400;
+        }
+
+        button {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d1554b;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .content a {
+            width: 280px;
+            height: 280px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .content a:hover img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <button onclick="history.back()">Back</button>
+    <h1>UNIT-4</h1>
+    <h2>TREES</h2>
+</header>
+
+<div class="content">
+    <a href="https://www.youtube.com/playlist?list=PLnccP3XNVxGoDyd9QGFRIomvafZb7d2DL" target="_blank">
+        <img src="pngs/youtube.jpg" alt="YouTube Playlist">
+    </a>
+    <a href="unit4pdf.html" target="_blank">
+        <img src="pngs/pdf.png" alt="PDF Resources">
+    </a>
+    <a href="https://visualgo.net/en/bst?slide=1" target="_blank">
+        <img src="pngs/vis.jpg" alt="Visualgo">
+    </a>
+    <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/" target="_blank">
+        <img src="pngs/website.jpg" alt="GeeksforGeeks Trees">
+    </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Links</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-link {
+            display: inline-block;
+            margin: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-link img {
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .image-link img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.cs.usfca.edu/~galles/visualization/StackArray.html" class="image-link">
+            <img src="stack1.png" alt="Stack Array Visualization">
+        </a>
+        <a href="https://www.cs.usfca.edu/~galles/visualization/StackLL.html" class="image-link">
+            <img src="stack2.png" alt="Stack Linked List Visualization">
+        </a>
+        <a href="https://www.cs.usfca.edu/~galles/visualization/QueueArray.html" class="image-link">
+            <img src="queue1.png" alt="Queue Array Visualization">
+        </a>
+        <a href="https://www.cs.usfca.edu/~galles/visualization/QueueLL.html" class="image-link">
+            <img src="Queue2.png" alt="Queue Linked List Visualization">
+        </a>
+    </div>
+</body>
+</html>
